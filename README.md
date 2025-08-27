@@ -1,6 +1,6 @@
-## Setup instructions
+# Setup instructions
 
-# Frontend
+## Frontend
 
 * Get into 'frontend' using 
 
@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-# Backend
+## Backend
 
 * Get into 'backend' using
 
@@ -23,7 +23,7 @@ npm run dev
 cd backend
 ```
 
-* Then run:
+* Then run, one after the other:
 
 ```bash
 python2 -m venv venv

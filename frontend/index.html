@@ -1,13 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>FastAPI Auth Frontend</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    input, button { margin: 0.5rem 0; display: block; }
+    .section { margin-bottom: 2rem; }
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="section" id="signup">
+    <h2>Sign Up</h2>
+    <input type="text" id="signup-username" placeholder="Username" />
+    <input type="email" id="signup-email" placeholder="Email" />
+    <input type="text" id="signup-mobile" placeholder="Mobile" />
+    <input type="password" id="signup-password" placeholder="Password" />
+    <input type="password" id="signup-confirm" placeholder="Confirm Password" />
+    <button onclick="signup()">Register</button>
+    <p id="signup-result"></p>
+  </div>
+
+  <div class="section" id="login">
+    <h2>Log In</h2>
+    <input type="email" id="login-email" placeholder="Email" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button onclick="login()">Log In</button>
+    <p id="login-result"></p>
+  </div>
+
+  <div class="section" id="profile">
+    <h2>My Profile</h2>
+    <button onclick="getProfile()">Fetch Profile</button>
+    <pre id="profile-result"></pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
