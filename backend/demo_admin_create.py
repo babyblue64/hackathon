@@ -2,7 +2,7 @@
 
 from sqlalchemy.orm import Session 
 from database import User, Role, get_db
-from backend.auth import hash_password
+from auth import hash_password
 
 def seed_demo_admin(db: Session):
     admin_role = db.query(Role).filter_by(RoleName="Admin").first()

@@ -1,23 +1,6 @@
 # Setup instructions
 
-## Frontend
-
-* Get into 'frontend' using 
-
-```bash
-cd frontend
-```
-
-* Then run:
-
-```bash
-npm install
-npm run dev
-```
-
-## Backend
-
-* Get into 'backend' using
+* Get into 'backend' directory using
 
 ```bash
 cd backend
